@@ -6,8 +6,10 @@ class Contacto extends Component {
   onClickEdit = id => {
     console.log("Editar", id);
   };
-  onClickDelete = id => {
-    console.log("Eliminar", id);
+  onClickDelete = async id => {
+    const res = await axios.delete("http://localhost:3000/api/contactos/" + id);
+    this.props.getContacts();
+    console.log(res.data.message);
   };
 
   render() {

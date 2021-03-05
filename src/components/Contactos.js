@@ -28,7 +28,11 @@ class Contactos extends Component {
         <h2 className="title">Tus contactos:</h2>
         <div className="contactos-list">
           {this.state.contacts.map(cont => (
-            <Contacto contact={cont} key={cont._id} />
+            <Contacto
+              getContacts={this.getContacts}
+              contact={cont}
+              key={cont._id}
+            />
           ))}
         </div>
       </div>
