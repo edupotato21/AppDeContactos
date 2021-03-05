@@ -1,0 +1,65 @@
+.contact {
+  display: flex;
+  background: #f7f7f7;
+  margin: 5px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.32);
+}
+
+.contact-img {
+  display: flex;
+}
+
+.contact-img img {
+  height: 100%;
+}
+
+.contact-description {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+.contact-description h3,
+.contact-description p {
+  font-size: 1.4em;
+}
+
+/* BOTONES */
+.btn-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+}
+
+.btn {
+  outline: none;
+  height: 35px;
+  color: #f7f7f7;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-danger {
+  background: #c23e3e;
+}
+
+.btn-primary {
+  background: #3e65c2;
+}
+
+.btn-danger:hover,
+.btn-primary:hover {
+  transition-duration: 0.1s;
+  opacity: 0.9;
+}
+
+.btn-danger:active,
+.btn-primary:active {
+  opacity: 1;
+}
